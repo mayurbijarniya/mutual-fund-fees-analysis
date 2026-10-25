@@ -1,0 +1,101 @@
+version: 2
+
+models:
+  - name: dim_share_class
+    description: One row per share class, with its fund, name, ticker, typical fee and status.
+    columns:
+      - name: class_id
+        tests: [unique, not_null]
+      - name: series_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_fund')
+                field: series_id
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["active", "stopped filing"]
+      - name: median_expense_ratio
+        tests:
+          - between:
+              arguments:
+                min_value: 0
+                max_value: "{{ var('max_expense_ratio') }}"
+
+  - name: dim_fund
+    description: One row per fund (SEC series).
+    columns:
+      - name: series_id
+        tests: [unique, not_null]
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["active", "stopped filing"]
+
+  - name: fct_class_fees
+    description: Effective expense ratio per share class per prospectus year.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [class_id, prospectus_year]
+    columns:
+      - name: class_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_share_class')
+                field: class_id
+      - name: effective_expense_ratio
+        tests:
+          - not_null
+          - between:
+              arguments:
+                min_value: 0
+                max_value: "{{ var('max_expense_ratio') }}"
+
+  - name: fct_class_returns
+    description: One valid before-tax yearly return per share class.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [class_id, return_year]
+    columns:
+      - name: class_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_share_class')
+                field: class_id
+      - name: annual_return
+        tests:
+          - not_null
+          - between:
+              arguments:
+                min_value: "{{ var('min_annual_return') }}"
+                max_value: "{{ var('max_annual_return') }}"
+      - name: return_year
+        tests:
+          - between:
+              arguments:
+                min_value: "{{ var('first_return_year') }}"
+                max_value: "{{ var('last_return_year') }}"
+
+  - name: fct_benchmark_excess
+    description: Latest 5 and 10 year comparison of each share class with its single index.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [class_id, horizon_years]
+    columns:
+      - name: class_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_share_class')
+                field: class_id
+      - name: excess_return
+        tests: [not_null]
