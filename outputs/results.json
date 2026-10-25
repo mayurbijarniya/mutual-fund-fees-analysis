@@ -1,0 +1,524 @@
+{
+  "data": {
+    "first_quarter": "2016q1",
+    "last_quarter": "2026q2",
+    "quarters": 42,
+    "facts": 7550615,
+    "filings": 55815,
+    "last_filed": "2026-06-30",
+    "share_classes": 58862,
+    "share_classes_with_fee": 57843,
+    "funds": 23372,
+    "class_years": 264403,
+    "restated_disagree": 0.0367204608,
+    "invalid_expense_ratios": 349,
+    "expense_ratio_rows": 473119,
+    "tickers": 44101
+  },
+  "fees": {
+    "by_year": [
+      {
+        "year": 2016,
+        "share_classes": 36693,
+        "p25": 0.0071,
+        "median": 0.0101,
+        "p75": 0.0144,
+        "mean": 0.0112263688,
+        "share_with_waiver": 0.5280935813
+      },
+      {
+        "year": 2017,
+        "share_classes": 38252,
+        "p25": 0.0069,
+        "median": 0.0099,
+        "p75": 0.0137,
+        "mean": 0.0108945428,
+        "share_with_waiver": 0.5489639213
+      },
+      {
+        "year": 2018,
+        "share_classes": 37095,
+        "p25": 0.0066,
+        "median": 0.0095,
+        "p75": 0.0131,
+        "mean": 0.0104064982,
+        "share_with_waiver": 0.547047319
+      },
+      {
+        "year": 2019,
+        "share_classes": 36215,
+        "p25": 0.0064,
+        "median": 0.0092,
+        "p75": 0.0127,
+        "mean": 0.0101166547,
+        "share_with_waiver": 0.5615249365
+      },
+      {
+        "year": 2020,
+        "share_classes": 34598,
+        "p25": 0.0061,
+        "median": 0.009,
+        "p75": 0.0125,
+        "mean": 0.0098303103,
+        "share_with_waiver": 0.5621824095
+      },
+      {
+        "year": 2021,
+        "share_classes": 33931,
+        "p25": 0.0059,
+        "median": 0.0086,
+        "p75": 0.012,
+        "mean": 0.0094717633,
+        "share_with_waiver": 0.5489433693
+      },
+      {
+        "year": 2022,
+        "share_classes": 33638,
+        "p25": 0.0058,
+        "median": 0.0085,
+        "p75": 0.0117,
+        "mean": 0.0092584153,
+        "share_with_waiver": 0.5237655057
+      },
+      {
+        "year": 2023,
+        "share_classes": 33471,
+        "p25": 0.0057,
+        "median": 0.0085,
+        "p75": 0.0117,
+        "mean": 0.0092331384,
+        "share_with_waiver": 0.5350890364
+      },
+      {
+        "year": 2024,
+        "share_classes": 32886,
+        "p25": 0.0056,
+        "median": 0.0084,
+        "p75": 0.0115,
+        "mean": 0.0092060603,
+        "share_with_waiver": 0.5233664816
+      },
+      {
+        "year": 2025,
+        "share_classes": 32108,
+        "p25": 0.0054,
+        "median": 0.0082,
+        "p75": 0.0113,
+        "mean": 0.0089420059,
+        "share_with_waiver": 0.4901734104
+      },
+      {
+        "year": 2026,
+        "share_classes": 20588,
+        "p25": 0.0055,
+        "median": 0.0081,
+        "p75": 0.0111,
+        "mean": 0.0088358388,
+        "share_with_waiver": 0.4441901237
+      }
+    ],
+    "same_class_change": {
+      "start_year": 2016,
+      "end_year": 2025,
+      "classes": 19208,
+      "median_start": 0.0093,
+      "median_end": 0.0087,
+      "median_change": -0.0004,
+      "share_cut": 0.6705018742,
+      "share_raised": 0.1966888796
+    },
+    "by_status": [
+      {
+        "status": "active",
+        "share_classes": 31619,
+        "median_expense_ratio": 0.0082
+      },
+      {
+        "status": "stopped filing",
+        "share_classes": 26224,
+        "median_expense_ratio": 0.0103
+      }
+    ]
+  },
+  "within_fund": {
+    "main": "next_prospectus",
+    "specifications": {
+      "next_prospectus": {
+        "slope": -0.8576963859,
+        "low": -0.8963937773,
+        "high": -0.8189989944,
+        "p_value": 0.0,
+        "observations": 54854,
+        "funds": 3839,
+        "fund_years": 21659
+      },
+      "same_year_prospectus": {
+        "slope": -0.8836912101,
+        "low": -0.9258144095,
+        "high": -0.8415680107,
+        "p_value": 0.0,
+        "observations": 46686,
+        "funds": 3322,
+        "fund_years": 18422
+      },
+      "typical_fee": {
+        "slope": -0.7645176236,
+        "low": -0.8466283627,
+        "high": -0.6824068845,
+        "p_value": 0.0,
+        "observations": 107580,
+        "funds": 3936,
+        "fund_years": 41789
+      }
+    }
+  },
+  "benchmark": {
+    "5_year": {
+      "share_classes": 21122,
+      "funds": 7485,
+      "share_beating": 0.3169680901,
+      "share_beating_low": 0.310726925,
+      "share_beating_high": 0.3232758192,
+      "median_excess": -0.0052,
+      "fee_slope": {
+        "slope": -1.4750292101,
+        "low": -1.6491202721,
+        "high": -1.3009381481,
+        "p_value": 0.0,
+        "observations": 21122
+      },
+      "by_quintile": [
+        {
+          "fee_quintile": 1,
+          "share_classes": 4224,
+          "min_fee": 0.0,
+          "median_fee": 0.0043,
+          "max_fee": 0.006,
+          "share_beating": 0.3771306818,
+          "share_beating_low": 0.3626324698,
+          "share_beating_high": 0.3918521744,
+          "median_excess": -0.0011,
+          "mean_excess": -0.0015119792,
+          "median_excess_before_fees": 0.0017
+        },
+        {
+          "fee_quintile": 2,
+          "share_classes": 4224,
+          "min_fee": 0.006,
+          "median_fee": 0.0073,
+          "max_fee": 0.0084,
+          "share_beating": 0.3411458333,
+          "share_beating_low": 0.3269987434,
+          "share_beating_high": 0.3555815963,
+          "median_excess": -0.0046,
+          "mean_excess": -0.0060131747,
+          "median_excess_before_fees": 0.002525
+        },
+        {
+          "fee_quintile": 3,
+          "share_classes": 4225,
+          "min_fee": 0.0084,
+          "median_fee": 0.0095,
+          "max_fee": 0.0106,
+          "share_beating": 0.3450887574,
+          "share_beating_low": 0.3309005084,
+          "share_beating_high": 0.3595584476,
+          "median_excess": -0.0066,
+          "mean_excess": -0.010689787,
+          "median_excess_before_fees": 0.0028
+        },
+        {
+          "fee_quintile": 4,
+          "share_classes": 4224,
+          "min_fee": 0.0106,
+          "median_fee": 0.01215,
+          "max_fee": 0.0145,
+          "share_beating": 0.2949810606,
+          "share_beating_low": 0.2814197685,
+          "share_beating_high": 0.3089149172,
+          "median_excess": -0.0098,
+          "mean_excess": -0.0122466146,
+          "median_excess_before_fees": 0.0025
+        },
+        {
+          "fee_quintile": 5,
+          "share_classes": 4225,
+          "min_fee": 0.0145,
+          "median_fee": 0.018,
+          "max_fee": 0.0996,
+          "share_beating": 0.2265088757,
+          "share_beating_low": 0.2141392748,
+          "share_beating_high": 0.2393753527,
+          "median_excess": -0.0148,
+          "mean_excess": -0.0248361302,
+          "median_excess_before_fees": 0.0029
+        }
+      ],
+      "by_index_fund": [
+        {
+          "index_fund": false,
+          "share_classes": 20160,
+          "min_fee": 0.0,
+          "median_fee": 0.00965,
+          "max_fee": 0.0996,
+          "share_beating": 0.327281746,
+          "share_beating_low": 0.3208380885,
+          "share_beating_high": 0.3337912134,
+          "median_excess": -0.0057,
+          "mean_excess": -0.0114036086,
+          "median_excess_before_fees": 0.0029
+        },
+        {
+          "index_fund": true,
+          "share_classes": 962,
+          "min_fee": 0.0,
+          "median_fee": 0.003,
+          "max_fee": 0.0185,
+          "share_beating": 0.1008316008,
+          "share_beating_low": 0.0833634483,
+          "share_beating_high": 0.1214749929,
+          "median_excess": -0.0026,
+          "mean_excess": -0.0038629938,
+          "median_excess_before_fees": -0.0001
+        }
+      ]
+    },
+    "10_year": {
+      "share_classes": 16057,
+      "funds": 5584,
+      "share_beating": 0.2980008719,
+      "share_beating_low": 0.2909754132,
+      "share_beating_high": 0.3051229595,
+      "median_excess": -0.0048,
+      "fee_slope": {
+        "slope": -1.3291431823,
+        "low": -1.5321735611,
+        "high": -1.1261128036,
+        "p_value": 0.0,
+        "observations": 16057
+      },
+      "by_quintile": [
+        {
+          "fee_quintile": 1,
+          "share_classes": 3211,
+          "min_fee": 0.0,
+          "median_fee": 0.0045,
+          "max_fee": 0.0063,
+          "share_beating": 0.3768296481,
+          "share_beating_low": 0.3602250447,
+          "share_beating_high": 0.3937286075,
+          "median_excess": -0.0012,
+          "mean_excess": -0.0016716443,
+          "median_excess_before_fees": 0.0023
+        },
+        {
+          "fee_quintile": 2,
+          "share_classes": 3211,
+          "min_fee": 0.0063,
+          "median_fee": 0.0075,
+          "max_fee": 0.0085,
+          "share_beating": 0.3114294612,
+          "share_beating_low": 0.2956457428,
+          "share_beating_high": 0.3276638308,
+          "median_excess": -0.0042,
+          "mean_excess": -0.0055549984,
+          "median_excess_before_fees": 0.0031
+        },
+        {
+          "fee_quintile": 3,
+          "share_classes": 3212,
+          "min_fee": 0.0085,
+          "median_fee": 0.0095,
+          "max_fee": 0.0106,
+          "share_beating": 0.3200498132,
+          "share_beating_low": 0.3041402545,
+          "share_beating_high": 0.3363892881,
+          "median_excess": -0.0053,
+          "mean_excess": -0.0103889788,
+          "median_excess_before_fees": 0.0042
+        },
+        {
+          "fee_quintile": 4,
+          "share_classes": 3211,
+          "min_fee": 0.0106,
+          "median_fee": 0.0122,
+          "max_fee": 0.0145,
+          "share_beating": 0.276860791,
+          "share_beating_low": 0.261657986,
+          "share_beating_high": 0.2925968604,
+          "median_excess": -0.0075,
+          "mean_excess": -0.0100562597,
+          "median_excess_before_fees": 0.0047
+        },
+        {
+          "fee_quintile": 5,
+          "share_classes": 3212,
+          "min_fee": 0.0145,
+          "median_fee": 0.0178,
+          "max_fee": 0.089,
+          "share_beating": 0.204856787,
+          "share_beating_low": 0.1912557149,
+          "share_beating_high": 0.2191629814,
+          "median_excess": -0.0124,
+          "mean_excess": -0.0220533313,
+          "median_excess_before_fees": 0.0055
+        }
+      ],
+      "by_index_fund": [
+        {
+          "index_fund": false,
+          "share_classes": 15363,
+          "min_fee": 0.0,
+          "median_fee": 0.0097,
+          "max_fee": 0.089,
+          "share_beating": 0.308598581,
+          "share_beating_low": 0.3013429927,
+          "share_beating_high": 0.3159498638,
+          "median_excess": -0.0051,
+          "mean_excess": -0.0101882933,
+          "median_excess_before_fees": 0.0041
+        },
+        {
+          "index_fund": true,
+          "share_classes": 694,
+          "min_fee": 0.0,
+          "median_fee": 0.0037,
+          "max_fee": 0.0154,
+          "share_beating": 0.0634005764,
+          "share_beating_low": 0.0475651289,
+          "share_beating_high": 0.0840427852,
+          "median_excess": -0.003225,
+          "mean_excess": -0.0045783141,
+          "median_excess_before_fees": -0.0002
+        }
+      ]
+    }
+  },
+  "survivorship": {
+    "cohort_2016": {
+      "share_classes": 36891,
+      "stopped": 18607,
+      "fee_active": 0.0088,
+      "fee_stopped": 0.011,
+      "share_stopped": 0.5043777615
+    },
+    "mean_yearly_bias": 0.0039154843,
+    "years": [
+      2016,
+      2024
+    ],
+    "yearly": [
+      {
+        "year": 2016,
+        "classes_all": 16524,
+        "classes_surviving": 10059,
+        "mean_all": 0.0729520364,
+        "mean_surviving": 0.0766087235,
+        "mean_stopped": 0.0672625367,
+        "bias": 0.0036566871
+      },
+      {
+        "year": 2017,
+        "classes_all": 16100,
+        "classes_surviving": 10227,
+        "mean_all": 0.1449823851,
+        "mean_surviving": 0.1503234477,
+        "mean_stopped": 0.1356816789,
+        "bias": 0.0053410626
+      },
+      {
+        "year": 2018,
+        "classes_all": 15821,
+        "classes_surviving": 10558,
+        "mean_all": -0.0612458884,
+        "mean_surviving": -0.0583146477,
+        "mean_stopped": -0.0671261923,
+        "bias": 0.0029312407
+      },
+      {
+        "year": 2019,
+        "classes_all": 15342,
+        "classes_surviving": 10876,
+        "mean_all": 0.1839105755,
+        "mean_surviving": 0.1900303696,
+        "mean_stopped": 0.1690071093,
+        "bias": 0.0061197941
+      },
+      {
+        "year": 2020,
+        "classes_all": 14706,
+        "classes_surviving": 11104,
+        "mean_all": 0.1211737658,
+        "mean_surviving": 0.1284183853,
+        "mean_stopped": 0.0988405469,
+        "bias": 0.0072446195
+      },
+      {
+        "year": 2021,
+        "classes_all": 14579,
+        "classes_surviving": 11417,
+        "mean_all": 0.1172143803,
+        "mean_surviving": 0.1223572042,
+        "mean_stopped": 0.0986452404,
+        "bias": 0.0051428239
+      },
+      {
+        "year": 2022,
+        "classes_all": 14404,
+        "classes_surviving": 11784,
+        "mean_all": -0.1361857574,
+        "mean_surviving": -0.1345957442,
+        "mean_stopped": -0.1433371756,
+        "bias": 0.0015900132
+      },
+      {
+        "year": 2023,
+        "classes_all": 14006,
+        "classes_surviving": 12159,
+        "mean_all": 0.140803884,
+        "mean_surviving": 0.1433371988,
+        "mean_stopped": 0.1241268002,
+        "bias": 0.0025333147
+      },
+      {
+        "year": 2024,
+        "classes_all": 13353,
+        "classes_surviving": 12487,
+        "mean_all": 0.1022648918,
+        "mean_surviving": 0.1029446945,
+        "mean_stopped": 0.0924627021,
+        "bias": 0.0006798027
+      }
+    ],
+    "benchmark_by_status": [
+      {
+        "horizon_years": 5,
+        "status": "active",
+        "share_classes": 12864,
+        "share_beating": 0.3620180348,
+        "median_excess": -0.0032
+      },
+      {
+        "horizon_years": 5,
+        "status": "stopped filing",
+        "share_classes": 8258,
+        "share_beating": 0.2467909906,
+        "median_excess": -0.0092
+      },
+      {
+        "horizon_years": 10,
+        "status": "active",
+        "share_classes": 10305,
+        "share_beating": 0.3380883066,
+        "median_excess": -0.0034
+      },
+      {
+        "horizon_years": 10,
+        "status": "stopped filing",
+        "share_classes": 5752,
+        "share_beating": 0.2261821975,
+        "median_excess": -0.0079
+      }
+    ]
+  }
+}
