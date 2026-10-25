@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: sec
+    description: Parquet files written by `funds ingest` from the SEC's quarterly zips.
+    tables:
+      - name: facts
+        description: Fee and return facts from the `num` table, filtered to the rr and oef taxonomies.
+        meta:
+          external_location: "read_parquet('data/processed/facts/*.parquet')"
+      - name: submissions
+        description: One row per filing, from the `sub` table.
+        meta:
+          external_location: "read_parquet('data/processed/submissions/*.parquet')"
+      - name: series_class
+        description: The SEC's yearly list of fund series and share classes, with names and tickers.
+        meta:
+          external_location: "read_parquet('data/processed/series_class.parquet')"

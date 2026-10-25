@@ -1,0 +1,8 @@
+# Paths are relative to the project root: the `funds` CLI runs dbt from there.
+funds:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: data/processed/funds.duckdb
+      threads: 4

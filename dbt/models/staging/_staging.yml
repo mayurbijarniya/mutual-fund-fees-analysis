@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: stg_facts
+    description: Typed fee and return facts, one row per value as filed.
+    columns:
+      - name: accession_number
+        tests: [not_null]
+      - name: tag
+        tests: [not_null]
+      - name: taxonomy
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["rr", "oef"]
+      - name: quarter
+        tests: [not_null]
+
+  - name: stg_submissions
+    description: One row per filing.
+    columns:
+      - name: accession_number
+        tests: [unique, not_null]
+      - name: filed_date
+        tests: [not_null]
+
+  - name: stg_series_class
+    description: Fund and share class names and tickers, one row per class per list year.
+    columns:
+      - name: class_id
+        tests: [not_null]
+      - name: series_id
+        tests: [not_null]

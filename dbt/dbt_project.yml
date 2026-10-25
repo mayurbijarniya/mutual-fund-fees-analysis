@@ -1,0 +1,28 @@
+name: funds
+version: "1.0.0"
+profile: funds
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target", "logs"]
+
+vars:
+  # Rules fixed in docs/DESIGN.md before any analysis was run.
+  max_expense_ratio: 0.10
+  min_annual_return: -0.95
+  max_annual_return: 3.0
+  first_return_year: 2006
+  last_return_year: 2025
+  # A share class is active if it filed in any of the last four quarters.
+  active_since_quarter: "2025q3"
+
+models:
+  funds:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table
