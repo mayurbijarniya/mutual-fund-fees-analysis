@@ -117,7 +117,7 @@ mutual-fund-fees-analysis/
 
 ## Dashboard
 
-**[Open the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/mayur.mahavir.bijarniya/viz/DoExpensiveMutualFundsEarnTheirFees/1_Arefeesworthpaying)**
+**[Open the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/mayur.mahavir.bijarniya/viz/DoExpensiveMutualFundsEarnTheirFees/3_Whyaverageslie)**
 
 Built from one workbook, `outputs/tableau/funds_dashboard.xlsx`, as three dashboards.
 

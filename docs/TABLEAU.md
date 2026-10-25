@@ -5,7 +5,7 @@ Everything comes from one file, `outputs/tableau/funds_dashboard.xlsx`, written 
 `funds analyze`. Tableau Public saves to your public profile, so everything in the
 workbook is public; it is all public SEC data.
 
-Published: [Do Expensive Mutual Funds Earn Their Fees?](https://public.tableau.com/app/profile/mayur.mahavir.bijarniya/viz/DoExpensiveMutualFundsEarnTheirFees/1_Arefeesworthpaying)
+Published: [Do Expensive Mutual Funds Earn Their Fees?](https://public.tableau.com/app/profile/mayur.mahavir.bijarniya/viz/DoExpensiveMutualFundsEarnTheirFees/3_Whyaverageslie)
 
 ## The plan
 
