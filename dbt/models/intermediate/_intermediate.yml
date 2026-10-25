@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: int_facts_dated
+    description: Facts with a value, joined to their filing date.
+
+  - name: int_class_series
+    description: The fund (series) each share class belongs to.
+    columns:
+      - name: class_id
+        tests: [unique, not_null]
+      - name: series_id
+        tests: [not_null]
+
+  - name: int_expense_ratios
+    description: Gross, net and effective expense ratio per share class per filing.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [accession_number, class_id]
+    columns:
+      - name: effective_expense_ratio
+        tests: [not_null]
+
+  - name: int_annual_returns
+    description: Every before-tax yearly return as filed, from both taxonomies.
+    columns:
+      - name: return_year
+        tests: [not_null]
+
+  - name: int_class_year_returns
+    description: One yearly return per share class, from the latest prospectus.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [class_id, return_year]
+
+  - name: int_benchmark_comparisons
+    description: 5 and 10 year share class returns against the single index in the same prospectus.
+    columns:
+      - name: horizon_years
+        tests:
+          - accepted_values:
+              arguments:
+                values: [5, 10]
